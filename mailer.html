@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mailer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title> Mailer </title>
+</head>
+
+<body>
+    <div class="container-fluid" id="main_conatiner">
+        <p class="msgHeader"> Send Message to Email </p>
+        <form action="/mailer/mailer.html">
+            <div class="container-fluid" id="name-email-container">
+                <div class="yourName  container-fluid inputcontainers">
+                    <input type="text" name="name" placeholder=" Enter Your Name" class="inputFields">
+                <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="yourEmail container-fluid inputcontainers">
+                    <input type="email" name="SenderEmail" placeholder="Enter Your Email" class="inputFields">
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+
+            </div>
+            <div class="container-fluid" id="phoneNumber-container">
+                <div class="yourPhone container-fluid inputcontainers">
+                    <input type="number" name="phonenumber" placeholder="Enter your mobile number" class="inputFields">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="recieverEmail container-fluid inputcontainers">
+                    <input type="email" name="RecieverEmail" placeholder="Enter Reciever Email"  class="inputFields">
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+
+            </div>
+            <div class="container-fluid" id="msgArea">
+                <textarea name="msgbox" id="msgbox" placeholder="Write Message"></textarea>
+            </div>
+            <div class="conatiner-fluid" id="saveContainer">
+                <button type="submit">SEND</button>
+                <p class="statustext">Sending Your Message......</p>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        <script src="mailer.js"></script>
+</body>
+
+</html>
